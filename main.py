@@ -21,13 +21,10 @@ class SSScout():
         self.browser.get('http://prnt.sc/')
     
 
-    #RSF (Random Screenshot Finder) - Has a counter (num) that is used to enumerate screenshot... 
-    #...saves so that there can't be multiple screenshots with the same name, which can cause errors
+    #RSF (Random Screenshot Finder) - Has a counter (num) that is used to enumerate screenshot saves so that there can't be multiple screenshots with the same name, which can cause errors
     #There was no testing done on running the bot twice in a row without getting rid of old screenshots beforehand
-    #The bot opens up a random link that is composed from the webpage url with a additional 6 characters chosen... 
-    #...at random to find a random screenshot on the page
-    #Afterwards the bot saves the image to the folder where the code was run from and adds a +1 to the num counter,...
-    #...and the cycle repeats for the amount of times the user has chosen on the start
+    #The bot opens up a random link that is composed from the webpage url with a additional 6 characters chosen at random to find a random screenshot on the page
+    #Afterwards the bot saves the image to the folder where the code was run from and adds a +1 to the num counter and the cycle repeats for the amount of times the user has chosen on the start
 
     def RSF(self):
         num = 0
